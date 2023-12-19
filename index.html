@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Custom Video Player</title>
+  </head>
+  <body>
+    <!-- homepage -->
+    <div class="homepage" style="display: none">
+      <img src="./Assets/undraw_happy_music_g6wc.svg" alt="music-image" />
+      <div>
+        <h1>Welcome to our Video Player</h1>
+        <p>
+          Explore the world of videos with our custom player. Choose your speed
+          of video and enjoy the playback experience.
+        </p>
+        <button href="#" id="getStartedBtn">Get Started</button>
+      </div>
+    </div>
+
+    <!-- player-container -->
+    <div class="player-container" id="videoPlayerContainer">
+      <video id="videoPlayer" controls>
+        <source
+          src="./Assets/Aashayein Lyrical Song Video - Iqbal _ Naseeruddin Shah, Shreyas Talpade _ KK & Salim Merchant.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="speed-control">
+        <label for="speed">Choose Speed: </label>
+        <select id="speed">
+          <option value="0.5">0.5x</option>
+          <option value="0.75">0.75x</option>
+          <option value="1" selected>1x</option>
+          <option value="1.25">1.25x</option>
+          <option value="1.5">1.5x</option>
+          <option value="1.75">1.75x</option>
+          <option value="2">2x</option>
+        </select>
+      </div>
+
+      <!-- back button -->
+      <button id="backButton">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
