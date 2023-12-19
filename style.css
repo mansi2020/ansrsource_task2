@@ -138,6 +138,7 @@ select option:checked {
 
 #videoPlayerContainer {
   background: linear-gradient(90deg, #fcff9e 0%, #fcb54c 100%);
+  display: none;
 }
 
 /*<------------------------------------media query for small device------------------------------> */
