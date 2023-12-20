@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- homepage -->
-    <div class="homepage">
+    <div class="homepage" style="display: none">
       <img src="./Assets/undraw_happy_music_g6wc.svg" alt="music-image" />
       <div>
         <h1>Welcome to our Video Player</h1>
@@ -21,29 +21,45 @@
     </div>
 
     <!-- player-container -->
-    <div class="player-container" id="videoPlayerContainer">
-      <video id="videoPlayer" controls>
-        <source
-          src="./Assets/Aashayein Lyrical Song Video - Iqbal _ Naseeruddin Shah, Shreyas Talpade _ KK & Salim Merchant.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <div class="speed-control">
-        <label for="speed">Choose Speed: </label>
-        <select id="speed">
-          <option value="0.5">0.5x</option>
-          <option value="0.75">0.75x</option>
-          <option value="1" selected>1x</option>
-          <option value="1.25">1.25x</option>
-          <option value="1.5">1.5x</option>
-          <option value="1.75">1.75x</option>
-          <option value="2">2x</option>
-        </select>
+    <div
+      class="player-container"
+      id="videoPlayerContainer"
+      style="display: flex"
+    >
+    
+      <!-- left part -->
+      <div id="player-container-left-part">
+        <!-- back button -->
+    <button id="backButton">Back</button>
+        <!-- video player -->
+        <video id="videoPlayer" controls>
+          <source
+            src="./Assets/Aashayein Lyrical Song Video - Iqbal _ Naseeruddin Shah, Shreyas Talpade _ KK & Salim Merchant.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <!-- speed controller -->
+        <div class="speed-control">
+          <label for="speed">Choose Speed: </label>
+          <select id="speed">
+            <option value="0.5">0.5x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+            <option value="1.75">1.75x</option>
+            <option value="2">2x</option>
+          </select>
+        </div>
       </div>
-
-      <!-- back button -->
-      <button id="backButton">Go Back</button>
+      <div id="player-container-right-part">
+        <img
+          src="./Assets/undraw_media_player_re_rdd2.svg"
+          alt="Music_fan"
+          id="musicImage"
+        />
+      </div>
     </div>
 
     <script src="script.js"></script>

@@ -71,40 +71,46 @@ body {
 }
 
 /*<------------player container----------->*/
-
 .player-container {
-  text-align: center;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-
+#player-container-left-part{
+  display: flex;
+  flex-direction: column;
+  gap:6rem;
+  width:50%;
+  padding:20px;
+}
+#player-container-right-part{
+  padding:20px;
+  width:50%;
+}
+#player-container-right-part img{
+  width:100%;
+}
 #videoPlayer {
-  box-shadow: 2px 2px 23px grey;
-  margin-bottom: 2rem;
+  box-shadow: 2px 5px 10px rgb(208, 208, 208);
 }
-
-.speed-control {
-  margin-top: 15px;
+.player-container{
+  width:100%;
 }
-
 .player-container video {
-  width: 50%;
+  width: 100%;
 }
 
 .speed-control {
   text-align: center;
   margin-top: 15px;
   display: flex;
-  gap: 1rem;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 label {
@@ -127,7 +133,10 @@ select {
 }
 
 #backButton {
-  margin-top: 5rem;
+  width:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Style for the selected option */
@@ -137,9 +146,8 @@ select option:checked {
 }
 
 #videoPlayerContainer {
-  background: linear-gradient(90deg, #fcff9e 0%, #fcb54c 100%);
   display: none;
-}
+} 
 
 /*<------------------------------------media query for small device------------------------------> */
 @media screen and (max-width: 767px) {
@@ -158,8 +166,36 @@ select option:checked {
     width: 100%;
   }
   /* player container */
-  .player-container video {
-    width: 100%;
+
+  .player-container{
+    flex-direction: column;
+    /* height:auto; */
+  }
+  #player-container-left-part,#player-container-right-part{
+    width:100%;
+  }
+  #player-container-left-part{
+    gap:1rem;
+    padding:10px;
+  }
+  select{
+    padding:0.2rem 1rem;
+  }
+  .speed-control label{
+    font-size: 1rem;
+  }
+  #player-container-right-part img{
+    width:90%;
+    position: relative;
+    bottom :80%;
+  }
+  #backButton {
+    width:80px;
+    height:30px;
+  }
+  #videoPlayer,.speed-control{
+    position: relative;
+    top:130%;
   }
 }
 
@@ -184,3 +220,5 @@ select option:checked {
     width: 100%;
   }
 }
+
+
