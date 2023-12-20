@@ -21,6 +21,8 @@ This web application showcases a custom video player with controls to change the
 ## Usage
 
 To use this project:
+![speed_control_homepage](https://github.com/mansi2020/ansrsource_task2/assets/57188328/99e07c30-aa48-4648-b9e3-12c6f2fcd40b)
+![speed_control_mainpage](https://github.com/mansi2020/ansrsource_task2/assets/57188328/6748c499-4635-4a03-8911-d2a7597ff06a)
 
 1. Clone or download the repository.
 2. Open the `index.html` file in your preferred browser.
