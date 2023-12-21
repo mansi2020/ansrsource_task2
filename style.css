@@ -169,6 +169,7 @@ select option:checked {
 
   .player-container{
     flex-direction: column;
+    display: none;
     /* height:auto; */
   }
   #player-container-left-part,#player-container-right-part{
